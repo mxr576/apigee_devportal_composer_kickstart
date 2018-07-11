@@ -24,7 +24,8 @@
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "~8.5.5"
@@ -76,6 +77,16 @@
         "enable-patching": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/*/composer.json",
+                "web/modules/custom/*/composer.json",
+                "web/themes/contrib/*/composer.json",
+                "web/themes/custom/*/composer.json"
+            ],
+            "merge-extra": true,
+            "merge-extra-deep": true
         }
     }
 }
