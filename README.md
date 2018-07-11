@@ -7,7 +7,7 @@ Apigee Edge Devportal Kickstart
 ## Installing
 
 ```sh
-git clone https://github.com/mxr576/apigee_edge_devportal_kickstart.git
-cd apigee_edge_devportal_kickstart
+git clone https://github.com/mxr576/apigee_devportal_composer_kickstart.git
+cd apigee_devportal_composer_kickstart
 composer install --no-dev # Leave out --no-dev if you need dev dependencies.
 ```
