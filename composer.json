@@ -9,16 +9,22 @@
             "role": ""
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "forked-apigee_edge": {
+            "type": "vcs",
+            "_comment1": "We have to install it here until the recent changes introduced in the workflow does not get released in a new alpha version.",
+            "url": "https://github.com/mxr576/apigee-devportal-drupal"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.5",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/apigee_edge": "dev-workflow",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.5",
         "drush/drush": "^9.0.0",
