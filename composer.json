@@ -43,6 +43,7 @@
         "drupal/apigee_edge": "dev-workflow",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.5",
+        "drupal/swagger_ui_formatter": "^2.0",
         "drush/drush": "^9.0.0",
         "mxr576/composer-patches": "^1.0",
         "vlucas/phpdotenv": "^2.4",

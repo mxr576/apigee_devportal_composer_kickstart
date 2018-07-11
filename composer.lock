@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89617b19b04763cacfc9098701db6617",
+    "content-hash": "50858e98d6f6d8c5d1e3827f1158eb25",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2190,6 +2190,66 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/key",
                 "issues": "http://drupal.org/project/key"
+            }
+        },
+        {
+            "name": "drupal/swagger_ui_formatter",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/swagger_ui_formatter",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/swagger_ui_formatter-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "2b63fc7c96234cbffb9c3a4a704c97d7ce6f5104"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1530275620",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Balazs Wittmann (balazswmann)",
+                    "homepage": "https://www.drupal.org/u/balazswmann",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "dsudheesh",
+                    "homepage": "https://www.drupal.org/user/956506"
+                },
+                {
+                    "name": "lizlynch",
+                    "homepage": "https://www.drupal.org/user/3569234"
+                },
+                {
+                    "name": "mxr576",
+                    "homepage": "https://www.drupal.org/user/315522"
+                }
+            ],
+            "description": "Provides a Swagger UI field formatter for file fields.",
+            "homepage": "https://www.drupal.org/project/swagger_ui_formatter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/swagger_ui_formatter"
             }
         },
         {
