@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50858e98d6f6d8c5d1e3827f1158eb25",
+    "content-hash": "ab2e977d06279297eee03d87f9d8e19b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3094,6 +3094,27 @@
                 "cweagans/composer-patches": "1.6.*"
             },
             "type": "library"
+        },
+        {
+            "name": "mxr576/swagger-ui",
+            "version": "3.17.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/swagger-api/swagger-ui/archive/v3.17.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "swagger-api/swagger-ui": "3.17.*"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "swagger_ui"
+            },
+            "description": "Swagger UI composer package does not contains some required information to be installed by composer/installer."
         },
         {
             "name": "nikic/php-parser",
