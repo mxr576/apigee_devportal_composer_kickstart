@@ -16,8 +16,24 @@
         },
         "forked-apigee_edge": {
             "type": "vcs",
-            "_comment1": "We have to install it here until the recent changes introduced in the workflow does not get released in a new alpha version.",
+            "_comment1": "We have to install it from here until the recent changes introduced in the workflow does not get released in a new alpha version.",
             "url": "https://github.com/mxr576/apigee-devportal-drupal"
+        },
+        "fixed-composer-patches": {
+            "type": "package",
+            "package": {
+                "name": "mxr576/composer-patches",
+                "description": "We have to install it from here until https://github.com/cweagans/composer-patches/pull/224 does not get merged because composer-patches can not patch itself on 'composer install'.",
+                "version": "1.0.180711",
+                "type": "library",
+                "dist": {
+                    "url": "https://github.com/mxr576/composer-patches/archive/patch-1.zip",
+                    "type": "zip"
+                },
+                "replace": {
+                    "cweagans/composer-patches": "1.6.*"
+                }
+            }
         }
     },
     "require": {
@@ -28,6 +44,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.5",
         "drush/drush": "^9.0.0",
+        "mxr576/composer-patches": "^1.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -83,6 +100,11 @@
         "enable-patching": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches": {
+            "cweagans/composer-patches": {
+                "Array to string exception if multiple patches": "https://github.com/cweagans/composer-patches/pull/224.diff"
+            }
         },
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
