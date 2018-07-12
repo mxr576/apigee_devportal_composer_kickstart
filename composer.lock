@@ -210,6 +210,22 @@
             "time": "2017-12-20T14:37:45+00:00"
         },
         {
+            "name": "bower-asset/swagger-ui",
+            "version": "v3.17.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swagger-api/swagger-ui.git",
+                "reference": "9709df82d363060e55c0bb92008911ab5a5975dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/9709df82d363060e55c0bb92008911ab5a5975dd",
+                "reference": "9709df82d363060e55c0bb92008911ab5a5975dd",
+                "shasum": null
+            },
+            "type": "bower-asset"
+        },
+        {
             "name": "chi-teck/drupal-code-generator",
             "version": "1.25.1",
             "source": {
@@ -3093,28 +3109,8 @@
             "replace": {
                 "cweagans/composer-patches": "1.6.*"
             },
-            "type": "library"
-        },
-        {
-            "name": "mxr576/swagger-ui",
-            "version": "3.17.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/swagger-api/swagger-ui/archive/v3.17.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "swagger-api/swagger-ui": "3.17.*"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "swagger_ui"
-            },
-            "description": "Swagger UI composer package does not contains some required information to be installed by composer/installer."
+            "type": "library",
+            "description": "We have to install it from here until https://github.com/cweagans/composer-patches/pull/224 does not get merged because composer-patches can not patch itself on 'composer install'."
         },
         {
             "name": "nikic/php-parser",

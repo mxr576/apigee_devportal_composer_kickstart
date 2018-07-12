@@ -38,31 +38,10 @@
                     "cweagans/composer-patches": "1.6.*"
                 }
             }
-        },
-        "swagger_ui": {
-            "type": "package",
-            "package": {
-                "name": "mxr576/swagger-ui",
-                "description": "Swagger UI composer package does not contains some required information to be installed by composer/installer.",
-                "version": "3.17.3",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "swagger_ui"
-                },
-                "dist": {
-                    "url": "https://github.com/swagger-api/swagger-ui/archive/v3.17.3.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "replace": {
-                    "swagger-api/swagger-ui": "3.17.*"
-                }
-            }
         }
     },
     "require": {
+        "bower-asset/swagger-ui": "^3.17",
         "composer/installers": "^1.5",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
@@ -111,13 +90,15 @@
         ]
     },
     "extra": {
+        "installer-types": ["bower-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "drush/Commands/{$name}": ["type:drupal-drush"],
+            "web/libraries/swagger_ui": ["bower-asset/swagger-ui"]
         },
         "drupal-scaffold": {
             "initial": {
