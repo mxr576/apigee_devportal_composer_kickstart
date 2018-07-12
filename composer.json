@@ -14,6 +14,10 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
         "forked-apigee_edge": {
             "type": "vcs",
             "_comment1": "We have to install it from here until the recent changes introduced in the workflow does not get released in a new alpha version.",
