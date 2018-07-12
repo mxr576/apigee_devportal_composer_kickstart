@@ -126,11 +126,6 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "cweagans/composer-patches": {
-                "Array to string exception if multiple patches": "https://github.com/cweagans/composer-patches/pull/224.diff"
-            }
-        },
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
             "include": [
