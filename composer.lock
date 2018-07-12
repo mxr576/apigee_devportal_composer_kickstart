@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab2e977d06279297eee03d87f9d8e19b",
+    "content-hash": "18ccf1918e3caae8634ed71833ae0521",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1533,12 +1533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mxr576/apigee-devportal-drupal.git",
-                "reference": "cdb68ad769a6e2b6fb1152cef24433472f41cf85"
+                "reference": "12b6f26cb063085dc6253cc6173debed06ee81ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mxr576/apigee-devportal-drupal/zipball/cdb68ad769a6e2b6fb1152cef24433472f41cf85",
-                "reference": "cdb68ad769a6e2b6fb1152cef24433472f41cf85",
+                "url": "https://api.github.com/repos/mxr576/apigee-devportal-drupal/zipball/12b6f26cb063085dc6253cc6173debed06ee81ce",
+                "reference": "12b6f26cb063085dc6253cc6173debed06ee81ce",
                 "shasum": ""
             },
             "require": {
@@ -1584,7 +1584,7 @@
             "support": {
                 "source": "https://github.com/mxr576/apigee-devportal-drupal/tree/workflow"
             },
-            "time": "2018-07-11T11:55:23+00:00"
+            "time": "2018-07-12T13:11:29+00:00"
         },
         {
             "name": "drupal/console",
@@ -2274,12 +2274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "de44f931852d14489084b599741a55c09cf79540"
+                "reference": "947591fad3c2f9dec462843357d798c875f905c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/de44f931852d14489084b599741a55c09cf79540",
-                "reference": "de44f931852d14489084b599741a55c09cf79540",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/947591fad3c2f9dec462843357d798c875f905c7",
+                "reference": "947591fad3c2f9dec462843357d798c875f905c7",
                 "shasum": ""
             },
             "require": {
@@ -2368,7 +2368,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2018-07-05T20:07:34+00:00"
+            "time": "2018-07-11T18:22:26+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -3099,7 +3099,7 @@
         },
         {
             "name": "mxr576/composer-patches",
-            "version": "1.0.20180711",
+            "version": "1.0.180711",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/mxr576/composer-patches/archive/patch-1.zip",
@@ -6408,16 +6408,16 @@
         },
         {
             "name": "wikimedia/composer-merge-plugin",
-            "version": "v1.4.1",
+            "version": "dev-capture-input-options",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+                "url": "https://github.com/mxr576/composer-merge-plugin.git",
+                "reference": "7d8d67797fd76442b9613e6e1c3be1781562f6ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "url": "https://api.github.com/repos/mxr576/composer-merge-plugin/zipball/7d8d67797fd76442b9613e6e1c3be1781562f6ec",
+                "reference": "7d8d67797fd76442b9613e6e1c3be1781562f6ec",
                 "shasum": ""
             },
             "require": {
@@ -6442,7 +6442,14 @@
                     "Wikimedia\\Composer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "test": [
+                    "composer validate --no-interaction",
+                    "parallel-lint src tests",
+                    "phpunit --log-junit=reports/unitreport.xml --coverage-text --coverage-html=reports/coverage --coverage-clover=reports/coverage.xml",
+                    "phpcs --encoding=utf-8 --standard=PSR2 --report-checkstyle=reports/checkstyle-phpcs.xml --report-full --extensions=php src/* tests/phpunit/*"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6453,7 +6460,10 @@
                 }
             ],
             "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2017-04-25T02:31:25+00:00"
+            "support": {
+                "source": "https://github.com/mxr576/composer-merge-plugin/tree/capture-input-options"
+            },
+            "time": "2018-07-12T12:40:57+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -8666,7 +8676,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/apigee_edge": 20
+        "drupal/apigee_edge": 20,
+        "wikimedia/composer-merge-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
