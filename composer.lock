@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18ccf1918e3caae8634ed71833ae0521",
+    "content-hash": "cb80da29a9bfc2864a770201bb190cac",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -72,16 +72,16 @@
         },
         {
             "name": "apigee/apigee-client-php",
-            "version": "2.0.0-alpha2",
+            "version": "2.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apigee/apigee-client-php.git",
-                "reference": "7ae1575fa98f72c1d8fc76f5626521551b81bd96"
+                "reference": "641915a8be2750ddca610fc1959e9a8a9e4bd455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apigee/apigee-client-php/zipball/7ae1575fa98f72c1d8fc76f5626521551b81bd96",
-                "reference": "7ae1575fa98f72c1d8fc76f5626521551b81bd96",
+                "url": "https://api.github.com/repos/apigee/apigee-client-php/zipball/641915a8be2750ddca610fc1959e9a8a9e4bd455",
+                "reference": "641915a8be2750ddca610fc1959e9a8a9e4bd455",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +155,7 @@
                 "sdk",
                 "web service"
             ],
-            "time": "2018-05-24T07:53:42+00:00"
+            "time": "2018-07-26T08:01:19+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1529,17 +1529,17 @@
         },
         {
             "name": "drupal/apigee_edge",
-            "version": "dev-workflow",
+            "version": "1.0.0-alpha6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mxr576/apigee-devportal-drupal.git",
-                "reference": "12b6f26cb063085dc6253cc6173debed06ee81ce"
+                "url": "https://git.drupal.org/project/apigee_edge",
+                "reference": "8.x-1.0-alpha6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mxr576/apigee-devportal-drupal/zipball/12b6f26cb063085dc6253cc6173debed06ee81ce",
-                "reference": "12b6f26cb063085dc6253cc6173debed06ee81ce",
-                "shasum": ""
+                "url": "https://ftp.drupal.org/files/projects/apigee_edge-8.x-1.0-alpha6.zip",
+                "reference": "8.x-1.0-alpha6",
+                "shasum": "93570c5c2a777efb7b418127e803b23f56d97cb8"
             },
             "require": {
                 "apigee/apigee-client-php": "^2.0",
@@ -1551,7 +1551,7 @@
                 "php-http/guzzle6-adapter": "^1.1.1"
             },
             "conflict": {
-                "apigee/apigee-client-php": "<= 2.0.0-alpha1"
+                "apigee/apigee-client-php": "< 2.0.0-alpha3"
             },
             "require-dev": {
                 "behat/mink": "dev-master#9ea1cebe",
@@ -1562,6 +1562,17 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1532598185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9"
@@ -1577,14 +1588,37 @@
                     }
                 }
             },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0"
             ],
+            "authors": [
+                {
+                    "name": "chrisnovak",
+                    "homepage": "https://www.drupal.org/user/880416"
+                },
+                {
+                    "name": "gitesh.koli",
+                    "homepage": "https://www.drupal.org/user/673858"
+                },
+                {
+                    "name": "mxr576",
+                    "homepage": "https://www.drupal.org/user/315522"
+                },
+                {
+                    "name": "peter_serfozo",
+                    "homepage": "https://www.drupal.org/user/3491859"
+                },
+                {
+                    "name": "tamasd",
+                    "homepage": "https://www.drupal.org/user/372872"
+                }
+            ],
             "description": "Apigee Edge for Drupal.",
+            "homepage": "https://www.drupal.org/project/apigee_edge",
             "support": {
-                "source": "https://github.com/mxr576/apigee-devportal-drupal/tree/workflow"
-            },
-            "time": "2018-07-12T13:11:29+00:00"
+                "source": "http://cgit.drupalcode.org/apigee_edge"
+            }
         },
         {
             "name": "drupal/console",
@@ -6858,12 +6892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "d8adafd0ba04fcd5a3865400e2bd0500c683f981"
+                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/d8adafd0ba04fcd5a3865400e2bd0500c683f981",
-                "reference": "d8adafd0ba04fcd5a3865400e2bd0500c683f981",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
+                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
                 "shasum": ""
             },
             "require": {
@@ -6911,7 +6945,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-06-25T17:38:20+00:00"
+            "time": "2018-07-23T10:51:47+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -7821,16 +7855,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
                 "shasum": ""
             },
             "require": {
@@ -7876,7 +7910,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-05-29T13:50:43+00:00"
+            "time": "2018-07-13T03:27:23+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -8474,7 +8508,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -8531,16 +8565,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "8a21eb6bedad38bf1f15d529c65eb9e17d0242fd"
+                "reference": "62c8349f21927b9a5975d89ee065e84d233a34e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/8a21eb6bedad38bf1f15d529c65eb9e17d0242fd",
-                "reference": "8a21eb6bedad38bf1f15d529c65eb9e17d0242fd",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/62c8349f21927b9a5975d89ee065e84d233a34e5",
+                "reference": "62c8349f21927b9a5975d89ee065e84d233a34e5",
                 "shasum": ""
             },
             "require": {
@@ -8593,7 +8627,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2018-06-10T07:25:02+00:00"
+            "time": "2018-07-05T11:53:23+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -8676,13 +8710,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/apigee_edge": 20,
+        "drupal/apigee_edge": 15,
         "wikimedia/composer-merge-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.1"
-    },
+    "platform": [],
     "platform-dev": []
 }
