@@ -22,35 +22,19 @@
             "type": "vcs",
             "_comment1": "We have to install it from here until this PR is open: https://github.com/wikimedia/composer-merge-plugin/pull/169. Applying this fix as a patch is not an option.",
             "url": "https://github.com/mxr576/composer-merge-plugin"
-        },
-        "fixed-composer-patches": {
-            "type": "package",
-            "package": {
-                "name": "mxr576/composer-patches",
-                "description": "We have to install it from here until https://github.com/cweagans/composer-patches/pull/224 does not get merged because composer-patches can not patch itself on 'composer install'.",
-                "version": "1.0.180711",
-                "type": "library",
-                "dist": {
-                    "url": "https://github.com/mxr576/composer-patches/archive/patch-1.zip",
-                    "type": "zip"
-                },
-                "replace": {
-                    "cweagans/composer-patches": "1.6.*"
-                }
-            }
         }
     },
+    "_comment1": "We only need the 1.x-dev version from the composer-patches until no new stable release gets released with this PR: https://github.com/cweagans/composer-patches/pull/224.",
     "require": {
         "bower-asset/swagger-ui": "^3.17",
         "composer/installers": "^1.5",
-        "cweagans/composer-patches": "^1.6.5",
+        "cweagans/composer-patches": "1.x-dev",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/apigee_edge": "^1.0.0-alpha6",
+        "drupal/apigee_edge": "^1.0.0-alpha7",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.5",
+        "drupal/core": "~8.6.0",
         "drupal/swagger_ui_formatter": "^2.0",
         "drush/drush": "^9.0.0",
-        "mxr576/composer-patches": "^1.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -58,7 +42,7 @@
         "wikimedia/composer-merge-plugin": "dev-capture-input-options"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.5.5"
+        "webflo/drupal-core-require-dev": "~8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -66,7 +50,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "preferred-install": "dist",
+        "preferred-install": {
+            "*": "dist",
+            "drupal/apigee_edge": "source"
+        },
         "sort-packages": true
     },
     "autoload": {
@@ -95,6 +82,7 @@
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"],
@@ -110,11 +98,18 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "patches": {
+            "drupal/apigee_edge": {
+                "Drupal 8.6 support": "https://github.com/apigee/apigee-edge-drupal/pull/63.diff"
+            }
+        },
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
             "include": [
                 "web/modules/contrib/*/composer.json",
+                "web/modules/contrib/*/modules/*/composer.json",
                 "web/modules/custom/*/composer.json",
+                "web/modules/custom/*/modules/*/composer.json",
                 "web/themes/contrib/*/composer.json",
                 "web/themes/custom/*/composer.json"
             ],
