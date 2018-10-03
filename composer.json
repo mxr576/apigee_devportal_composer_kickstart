@@ -32,7 +32,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/apigee_edge": "^1.0.0-alpha7",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.6.0",
+        "drupal/core": "~8.6",
         "drupal/swagger_ui_formatter": "^2.0",
         "drush/drush": "^9.0.0",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -42,7 +42,7 @@
         "wikimedia/composer-merge-plugin": "dev-capture-input-options"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.6.0"
+        "webflo/drupal-core-require-dev": "~8.6"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87685a5e06313acb2e29438968e41719",
+    "content-hash": "5e9a5c45da53c403ef5d0980b183d5ff",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -215,12 +215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "00432fc07ccffdd1304a920e610edb14478b7553"
+                "reference": "f51f391dcc55eb78ada3a6a34f73f6bfcf1e6695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/00432fc07ccffdd1304a920e610edb14478b7553",
-                "reference": "00432fc07ccffdd1304a920e610edb14478b7553",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/f51f391dcc55eb78ada3a6a34f73f6bfcf1e6695",
+                "reference": "f51f391dcc55eb78ada3a6a34f73f6bfcf1e6695",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -2213,16 +2213,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.0",
+            "version": "8.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "4a2507b102fcedc74507fd372131f2ed72913429"
+                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/4a2507b102fcedc74507fd372131f2ed72913429",
-                "reference": "4a2507b102fcedc74507fd372131f2ed72913429",
+                "url": "https://api.github.com/repos/drupal/core/zipball/1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
+                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
                 "shasum": ""
             },
             "require": {
@@ -2448,7 +2448,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-09-05T22:16:20+00:00"
+            "time": "2018-09-10T11:50:07+00:00"
         },
         {
             "name": "drupal/entity",
@@ -9042,16 +9042,16 @@
         },
         {
             "name": "webflo/drupal-core-require-dev",
-            "version": "8.6.0",
+            "version": "8.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "26775125d6b974a84c3618f8e0d8f1cd9a4091ef"
+                "reference": "75f73363165a450e9a2f9f1ce3930f148184c964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/26775125d6b974a84c3618f8e0d8f1cd9a4091ef",
-                "reference": "26775125d6b974a84c3618f8e0d8f1cd9a4091ef",
+                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/75f73363165a450e9a2f9f1ce3930f148184c964",
+                "reference": "75f73363165a450e9a2f9f1ce3930f148184c964",
                 "shasum": ""
             },
             "require": {
@@ -9059,7 +9059,7 @@
                 "behat/mink-goutte-driver": "^1.2",
                 "behat/mink-selenium2-driver": "1.3.x-dev",
                 "drupal/coder": "^8.2.12",
-                "drupal/core": "8.6.0",
+                "drupal/core": "8.6.1",
                 "jcalderonzumba/gastonjs": "^1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
@@ -9075,14 +9075,15 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/core",
-            "time": "2018-09-05T22:31:48+00:00"
+            "time": "2018-09-10T13:31:43+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "cweagans/composer-patches": 20,
-        "wikimedia/composer-merge-plugin": 20
+        "wikimedia/composer-merge-plugin": 20,
+        "behat/mink": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
