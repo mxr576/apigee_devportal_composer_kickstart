@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e9a5c45da53c403ef5d0980b183d5ff",
+    "content-hash": "63e47706cc8b412aa122754f26414125",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1920,7 +1920,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Drupal 8.6 support": "https://github.com/apigee/apigee-edge-drupal/pull/63.diff"
+                    "Every changes since alpha7": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.0-alpha7...8.x-1.x.diff",
+                    "Introduce auth config object": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.x...mxr576:restore-config-obj.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9082,8 +9083,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "cweagans/composer-patches": 20,
-        "wikimedia/composer-merge-plugin": 20,
-        "behat/mink": 20
+        "wikimedia/composer-merge-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

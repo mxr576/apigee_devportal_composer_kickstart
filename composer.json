@@ -100,7 +100,8 @@
         },
         "patches": {
             "drupal/apigee_edge": {
-                "Drupal 8.6 support": "https://github.com/apigee/apigee-edge-drupal/pull/63.diff"
+                "Every changes since alpha7": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.0-alpha7...8.x-1.x.diff",
+                "Introduce auth config object": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.x...mxr576:restore-config-obj.diff"
             }
         },
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
