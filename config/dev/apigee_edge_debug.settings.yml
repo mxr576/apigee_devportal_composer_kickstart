@@ -1,0 +1,6 @@
+formatter: full_html
+log_message_format: "<pre>{request_formatted}</pre>\r\n<p>Transfer statistics: <pre>{stats}</pre></p>"
+mask_organization: true
+remove_credentials: true
+_core:
+  default_config_hash: 1DtFid5N8ZqUW7h0xB4jImmTYcNZNzYxZj5dSuVdiic

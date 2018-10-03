@@ -1,0 +1,17 @@
+uuid: a0e8d6b2-7611-4fbf-909e-721f57f93c40
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'analytics own developer_app'
+  - 'create developer_app'
+  - 'delete own developer_app'
+  - 'update own developer_app'
+  - 'view own developer_app'

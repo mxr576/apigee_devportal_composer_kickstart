@@ -1,0 +1,17 @@
+uuid: a9aed437-962a-4911-9e37-e1bd49052e24
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: ''
+folder: ../config/dev
+module:
+  apigee_edge_debug: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.performance
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

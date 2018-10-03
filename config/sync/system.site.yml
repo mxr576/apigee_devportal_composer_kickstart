@@ -1,0 +1,14 @@
+uuid: 51af2805-ce4a-438c-b1bb-b6050d31d728
+name: 'Local Apigee D8'
+mail: mxr576@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,18 @@
+uuid: 8a4ffc45-73fd-4ffc-98cd-44ccf606301b
+langcode: en
+status: true
+dependencies: {  }
+id: keep
+label: keep
+description: "Environment specific configurations (config objects) that should not be synced but must not be deleted from the current environment when a full config import happens. Ex.: Contact/Webform forms, Keys, Simplenews newsletters, etc.\r\n\r\nThis split should be always active, if you need to disable it add this to the settings.php: $config['config_split.config_split.status']['status'] = FALSE;\r\n"
+folder: ../config/keep
+module:
+  apigee_edge_debug: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - apigee_edge.auth
+  - 'key.key.*'
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 50
