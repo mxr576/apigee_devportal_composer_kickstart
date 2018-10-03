@@ -15,4 +15,4 @@ graylist:
   - 'key.key.*'
 graylist_dependents: false
 graylist_skip_equal: true
-weight: 50
+weight: 0
