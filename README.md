@@ -20,9 +20,11 @@ gets released from the Apigee Edge module.
 ## Installing Drupal with Config Installer
 
 You can spin-up a new site by using the exported configuration from this
-repository when you are installing your test environment. Select
-"Use existing configuration" when you are installing the site. After the
-install process has finished the Apigee Edge module will be enabled
+repository when you are installing your test environment.
+
+1. [Change the storage location of the sync directory](https://www.drupal.org/docs/8/configuration-management/changing-the-storage-location-of-the-sync-directory) to "../config/sync".
+2. Select "Use existing configuration" when you are installing the site.
+3. After the install process has finished the Apigee Edge module will be enabled
 with its default configuration. You just need to set your authentication
 key at `admin/config/apigee-edge/settings`.
 
