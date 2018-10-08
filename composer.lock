@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fcdcc16da72edc80d3b496fed17df75",
+    "content-hash": "842e803c05e38902d5ba61759727e8ec",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -72,16 +72,16 @@
         },
         {
             "name": "apigee/apigee-client-php",
-            "version": "2.0.0-alpha4",
+            "version": "2.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apigee/apigee-client-php.git",
-                "reference": "8d045ed60d978d7e6321c25a1a285421a13463a0"
+                "reference": "564ea5aec95cae639bc4b8295932875fe8ddef7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apigee/apigee-client-php/zipball/8d045ed60d978d7e6321c25a1a285421a13463a0",
-                "reference": "8d045ed60d978d7e6321c25a1a285421a13463a0",
+                "url": "https://api.github.com/repos/apigee/apigee-client-php/zipball/564ea5aec95cae639bc4b8295932875fe8ddef7d",
+                "reference": "564ea5aec95cae639bc4b8295932875fe8ddef7d",
                 "shasum": ""
             },
             "require": {
@@ -108,6 +108,7 @@
             "conflict": {
                 "guzzlehttp/guzzle": "<6.1.0",
                 "guzzlehttp/psr7": "<1.4.1",
+                "php-http/client-common": ">1.7",
                 "phpdocumentor/type-resolver": "<0.2.1"
             },
             "require-dev": {
@@ -123,7 +124,7 @@
                 "phpmetrics/phpmetrics": "^2.3",
                 "phpunit/phpunit": "^6.4.0",
                 "sebastian/comparator": "^2.1",
-                "vimeo/psalm": "^0.3.89"
+                "vimeo/psalm": "^2.0.0"
             },
             "type": "library",
             "extra": {
@@ -155,7 +156,7 @@
                 "sdk",
                 "web service"
             ],
-            "time": "2018-08-14T14:48:52+00:00"
+            "time": "2018-10-08T07:05:41+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1861,36 +1862,37 @@
         },
         {
             "name": "drupal/apigee_edge",
-            "version": "1.0.0-alpha7",
+            "version": "1.0.0-alpha8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/apigee_edge",
-                "reference": "8.x-1.0-alpha7"
+                "reference": "8.x-1.0-alpha8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/apigee_edge-8.x-1.0-alpha7.zip",
-                "reference": "8.x-1.0-alpha7",
-                "shasum": "c9f14d5082b8af5c027e9e039f9270185d2017ae"
+                "url": "https://ftp.drupal.org/files/projects/apigee_edge-8.x-1.0-alpha8.zip",
+                "reference": "8.x-1.0-alpha8",
+                "shasum": "bdb434a98e08b4ae7e089f8bf5a06cc393dc1c7c"
             },
             "require": {
                 "apigee/apigee-client-php": "^2.0",
                 "cweagans/composer-patches": "^1.6.5",
-                "drupal/core": "^8.5",
+                "drupal/core": "^8.6",
                 "drupal/entity": "^1.0",
                 "drupal/key": "^1.7",
                 "php": ">=7.1",
                 "php-http/guzzle6-adapter": "^1.1.1"
             },
             "conflict": {
-                "apigee/apigee-client-php": "< 2.0.0-alpha4"
+                "apigee/apigee-client-php": "<2.0.0-alpha5",
+                "php-http/client-common": ">1.7"
             },
             "require-dev": {
                 "behat/mink": "dev-master#9ea1cebe",
                 "drush/drush": "^9.0",
                 "egulias/email-validator": "1.2.14",
                 "phpunit/phpunit": "^6.5",
-                "webflo/drupal-core-require-dev": "^8.5"
+                "webflo/drupal-core-require-dev": "^8.6"
             },
             "type": "drupal-module",
             "extra": {
@@ -1898,8 +1900,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha7",
-                    "datestamp": "1534310884",
+                    "version": "8.x-1.0-alpha8",
+                    "datestamp": "1538990580",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -1912,16 +1914,11 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "(For testing) Drupal core tests actually requires PHPUnit >= 6.5": "https://www.drupal.org/files/issues/2018-04-11/require_phpunit_65-2947888-5.patch",
-                        "(For testing) Time Ago summary does not render on Manage Display for Datetime": "https://www.drupal.org/files/issues/2686409-45.patch"
+                        "(For testing) Time Ago summary does not render on Manage Display for Datetime": "https://www.drupal.org/files/issues/2018-08-06/2686409-61.patch"
                     },
                     "drupal/key": {
                         "Fix implementation of NoneKeyInput": "https://www.drupal.org/files/issues/2018-06-27/key-fix-implementation-of-nonekeyinput-2982124-2.patch"
                     }
-                },
-                "patches_applied": {
-                    "Every changes since alpha7": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.0-alpha7...8.x-1.x.diff",
-                    "Introduce auth config object": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.x...mxr576:restore-config-obj.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2613,7 +2610,9 @@
                     "replace": false,
                     "merge-extra": false
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "(For testing) Time Ago summary does not render on Manage Display for Datetime": "https://www.drupal.org/files/issues/2018-08-06/2686409-61.patch"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -7408,12 +7407,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841"
+                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
-                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
+                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
                 "shasum": ""
             },
             "require": {
@@ -7461,7 +7460,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-07-23T10:51:47+00:00"
+            "time": "2018-10-03T14:49:03+00:00"
         },
         {
             "name": "doctrine/instantiator",

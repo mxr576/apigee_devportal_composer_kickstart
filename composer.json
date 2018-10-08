@@ -30,7 +30,7 @@
         "composer/installers": "^1.5",
         "cweagans/composer-patches": "1.x-dev",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/apigee_edge": "^1.0.0-alpha7",
+        "drupal/apigee_edge": "^1.0.0-alpha8",
         "drupal/config_installer": "^1.8",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
@@ -101,12 +101,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "drupal/apigee_edge": {
-                "Every changes since alpha7": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.0-alpha7...8.x-1.x.diff",
-                "Introduce auth config object": "https://github.com/apigee/apigee-edge-drupal/compare/8.x-1.x...mxr576:restore-config-obj.diff"
-            }
-        },
+        "patches": {},
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
             "include": [
