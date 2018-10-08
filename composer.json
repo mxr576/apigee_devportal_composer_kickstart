@@ -30,9 +30,9 @@
         "composer/installers": "^1.5",
         "cweagans/composer-patches": "1.x-dev",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/apigee_edge": "^1.0.0-alpha7",
+        "drupal/apigee_edge": "^1.0.0-alpha8",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.6.0",
+        "drupal/core": "^8.6.1",
         "drupal/swagger_ui_formatter": "^2.0",
         "drush/drush": "^9.0.0",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -42,7 +42,7 @@
         "wikimedia/composer-merge-plugin": "dev-capture-input-options"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.6.0"
+        "webflo/drupal-core-require-dev": "^8.6.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -98,11 +98,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "drupal/apigee_edge": {
-                "Drupal 8.6 support": "https://github.com/apigee/apigee-edge-drupal/pull/63.diff"
-            }
-        },
+        "patches": {},
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
             "include": [
