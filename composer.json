@@ -100,7 +100,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {},
+        "patches": {
+            "drupal/apigee_edge": {
+                "Config Installer fix": "https://github.com/apigee/apigee-edge-drupal/pull/74.diff"
+            }
+        },
         "_comment1": "Without the wikimedia/composer-merge-plugin drupal/core patches does not get applied from contrib modules automatically. See: https://github.com/cweagans/composer-patches/issues/219",
         "merge-plugin": {
             "include": [

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed0753de845e89ea1ef5a04cd01238fc",
+    "content-hash": "414cae3b8316737f3812386069485edd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1924,6 +1924,9 @@
                     "drupal/key": {
                         "Fix implementation of NoneKeyInput": "https://www.drupal.org/files/issues/2018-06-27/key-fix-implementation-of-nonekeyinput-2982124-2.patch"
                     }
+                },
+                "patches_applied": {
+                    "Config Installer fix": "https://github.com/apigee/apigee-edge-drupal/pull/74.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7411,12 +7414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d"
+                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
-                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8684ee4e634db7abda9039ea53545f86fc1e105a",
+                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a",
                 "shasum": ""
             },
             "require": {
@@ -7464,7 +7467,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-03T14:49:03+00:00"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "doctrine/instantiator",
