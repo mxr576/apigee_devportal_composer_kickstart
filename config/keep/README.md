@@ -20,5 +20,5 @@ This split should be always active, if you need to disable it add this
 to the settings.php or settings.local.php:
  
 ```php
-$config['config_split.config_split.status']['status'] = FALSE;
+$config['config_split.config_split.keep']['status'] = FALSE;
 ```
